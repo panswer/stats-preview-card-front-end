@@ -1,0 +1,14 @@
+.container-stats{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-stats {
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

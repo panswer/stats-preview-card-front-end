@@ -1,0 +1,55 @@
+.container-content {
+    color: var(--color-neutral-slightly-white2);
+    padding: .1rem 1.5rem 0;
+    box-sizing: border-box;
+    margin-top: 1.25rem;
+}
+
+.title,
+.title span {
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca';
+    font-weight: var(--font-weight2);
+    text-align: center;
+}
+
+.title {
+    color: var(--color-neutral-white);
+}
+
+.title span {
+    color: var(--color-primary-soft-violet);
+}
+
+.description {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: .85rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        padding-left: 4rem;
+    }
+
+    .title,
+    .title span {
+        font-size: 1.9rem;
+    }
+
+    .description {
+        margin-top: 2rem;
+    }
+
+    .title,
+    .description {
+        text-align: left;
+    }
+}

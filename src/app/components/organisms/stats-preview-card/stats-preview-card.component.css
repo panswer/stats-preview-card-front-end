@@ -1,0 +1,33 @@
+.container-card {
+    display: grid;
+    grid-template-areas: "image""content""stats";
+    width: 270px;
+    background-color: var(--color-primary-dark-desatured-blue);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 580px;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.card-image{
+    grid-area: image;
+}
+
+.card-stats{
+    padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px){
+    .container-card {
+        grid-template-areas: "content image" "stats image";
+        width: 800px;
+        height: 330px;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-stats{
+        padding-bottom: 0;
+        margin-top: 2rem;
+    }
+}
